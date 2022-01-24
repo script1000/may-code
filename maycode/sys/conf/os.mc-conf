@@ -1,0 +1,10 @@
+[System]
+os = %sys.secret.folder%
+
+[Variable]
+var.settings = settings[
+    varPrefix = #[*]
+]
+variable = list[
+
+]
