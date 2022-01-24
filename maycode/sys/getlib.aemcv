@@ -1,0 +1,7 @@
+
+
+include(ae.ssif); // コメントやincludeなどは普通にシステムから追加
+
+dat script = getCodeFromCurrentDoc();
+txt esct = "getlib";
+

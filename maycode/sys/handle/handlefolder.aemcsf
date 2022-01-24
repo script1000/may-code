@@ -1,0 +1,26 @@
+getlib sys.handle.*;
+
+txtArray unUsableName = "com","aux";
+
+uiLabel folderLabel = {labelsize=5'auto,data=(
+    #trlln#__%name%: info.folderName
+    #trlln#__%category%: info.folderType
+    #trlln#__%created~date%: info.folder.createdD
+    #trlln#__%updated~date%: info.folder.updatedD
+    #trlln#__%filecode%: info.folder.filecode
+)}
+
+function onClick {
+    if(info.folder.filecode #inc= -sysf) {
+        alert(trlln="System Compiler Handler","you wanna to open system folder?",btn1="yes",btn2="no");
+        if(btn1.isPressed = true) {
+            current.screen.fileview = usr.openPath;
+        } else {
+            nothing();
+        }
+    }
+    if(info.folder.filecode #inc= -ntof) {
+        alert(trlln="System Compiler Handler","this folder is protected by %path.content.protected_name%. unlock this folder at file unlocker.",btn1="OK");
+    }
+    
+}
