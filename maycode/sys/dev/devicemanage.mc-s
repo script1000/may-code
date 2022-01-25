@@ -1,0 +1,3 @@
+if($$$some%device = unusable) {
+    setStatus($$$some%device, unusable);
+}

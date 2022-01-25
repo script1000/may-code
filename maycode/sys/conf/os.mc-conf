@@ -3,8 +3,11 @@ os = %sys.secret.folder%
 
 [Variable]
 var.settings = settings[
-    varPrefix = #[*]
+    varPrefix = #var[*]
 ]
 variable = list[
-
+    system = list[
+        bootloader = lib/bootloader/boot.mc-bls;
+    ]
 ]
+

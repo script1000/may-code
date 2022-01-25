@@ -1,0 +1,13 @@
+getlib sys.boot.*;
+
+bool isPowered = false;
+bool isLoaded = false;
+
+function bootloader {
+    stat pc_boot_status = os.sys.boot.stat;
+
+    if(usrBT = bootType0) {
+        // 普通
+        load(startup);
+    }
+}
