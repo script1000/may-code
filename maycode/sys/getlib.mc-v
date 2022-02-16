@@ -5,3 +5,22 @@ include(ae.ssif); // コメントやincludeなどは普通にシステムから�
 dat script = getCodeFromCurrentDoc();
 txt esct = "getlib";
 
+url svr = aesvr://pris.vr/process?id=mayCode&ver={current.ver}vtrueAPP559&svr=aesvr://pris.vr/svr?id=svr.may.code/src/svr/583693bd3abda63/;
+
+txt s1 = find(finder,getXXXX(string[]));
+svr getSvr = url(Gvar.svr);
+txt_array lib = url(Gvar.svr + this.script.getSvrFunc_icl_getlib);
+
+function getSvr(Svr.path) {
+    if(Svr.path) true {
+        svrCheck(Svr.path);
+        if(svrCheck.result = 1) {
+            loadsvr(Svr.path);
+        } else {
+            compile.msg.error.errorList.sent(error, msg(os.sys.compile.msg.error.emsgs.list(id=compileE-SVR_NT_FOUND)));
+        }
+    } else {
+        compile.msg.error.errorList.sent(error, msg(os.sys.compile.msg.error.emsgs.list(id=compileE-GTSVR_STR_NT_INS)));
+    }
+}
+
