@@ -1,8 +1,6 @@
-
-
 include(ae.ssif); // コメントやincludeなどは普通にシステムから追加
 
-dat script = getCodeFromCurrentDoc();
+dat script = may.getCodeFromCurrentDoc(); 
 txt esct = "getlib";
 
 url svr = aesvr://pris.vr/process?id=mayCode&ver={current.ver}vtrueAPP559&svr=aesvr://pris.vr/svr?id=svr.may.code/src/svr/583693bd3abda63/;
